@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap");
+
+:root {
+  --dark: #000000;
+  --dark-one: #231f20;
+  --dark-two: #0f001a;
+  --main-color: #008c45;
+  --second-color: #008c4599;
+  --transparent-color: #008c451a;
+  --light: #ffffff;
+  --gray: #878787;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+/*-------------------------TEXTS COLOR-----------------------------*/
+
+.--dark {
+  color: var(--dark);
+}
+
+.--dark-one {
+  color: var(--dark-one);
+}
+
+.--dark-two {
+  color: var(--dark-two);
+}
+
+.--main-color {
+  color: var(--main-color);
+}
+
+.--second-color {
+  color: var(--second-color);
+}
+
+.--transparent-color {
+  color: var(--transparent-color);
+}
+
+.--light {
+  color: var(--light);
+}
+
+.--gray {
+  color: var(--gray);
+}
+
+/*-------------------------END TEXTS COLOR-----------------------------*/
+
+/*-------------------------BACKGROUND COLOR-----------------------------*/
+
+.bg-main-color {
+  background-color: var(--main-color);
+}
+
+.bg-second-color {
+  background-color: var(--second-color);
+}
+
+.bg-icon {
+  margin: 0 auto;
+  background-color: #ffffff15;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.btn-gradient {
+  border: 1px solid var(--main-color);
+  border-radius: 0%;
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, var(--light) 40%, var(--main-color) 50%)
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.btn-gradient:hover {
+  background-position: left;
+  color: #ffffff;
+}
+
+.hover-main-color:hover {
+  background-color: var(--main-color);
+  color: var(--light);
+  transition: 0.3s ease;
+}
+
+.hover-second-color:hover {
+  background-color: var(--second-color);
+  color: var(--light);
+  transition: 0.3s ease;
+}
+
+/*-------------------------END BACKGROUND COLOR-----------------------------*/
+
+.nav-item a:hover {
+  color: var(--main-color);
+}
+
+.active {
+  border-bottom: 4px solid var(--main-color);
+}
+
+.mt-n4 {
+  margin-top: -4rem;
+}
+
+.mt-n8 {
+  margin-top: -8rem;
+}
+
+.mt-37 {
+  margin-top: 37px;
+}
+
+.mt-220 {
+  margin-top: 220px;
+}
+
+.w-120 {
+  width: 120%;
+}
+
+.border-radius-15 {
+  border-radius: 15px;
+}
+
+.rounded-top-20 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.fs-22 {
+  font-size: 22.5px;
+}
+
+.x-width {
+  max-width: 260px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.nav-item > a:hover {
+  color: var(--main-color);
+}
+
+.special:after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--main-color);
+  padding: 15px 90px;
+  transform: translate(-95%, 50%);
+  color: #fff;
+  z-index: -1;
+}
+
+@media (max-width: 568px) {
+  .g-map {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
